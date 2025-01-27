@@ -1,0 +1,15 @@
+import { Buffer } from 'buffer';
+export declare function createHandshakePacket(address: string, port: number, protocolVersion: number): Buffer;
+export declare function createRequestPacket(): Buffer;
+export declare function writeVarInt(value: number): Buffer;
+export declare function getValidAddr(value: string, default_port: number): [string, number];
+export declare function getJeLatency(addr: string, port: number): Promise<number>;
+export declare function getSrvInfo(host: string): Promise<[string, number]>;
+export declare function getJeServJson(addr: string, port: number, timeout?: number): Promise<any>;
+//export declare function flatJsonEntity(jsonObj: any): any[];
+//export declare function flatJsonEntity2(jsonObj: any): any[];
+export declare function ServerState(mcClient: any, isShowVersion?: boolean, isShowList?: boolean): Promise<string>;
+// export declare function pingBar(mcClient: any): Promise<string>;
+// export declare function isValidAddrHasPort(value: string): boolean;
+// export declare function filterDescText(description: any): string;
+// export declare function getUuidNameByName(ctx: any, name: string): Promise<object>;

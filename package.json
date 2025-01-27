@@ -1,0 +1,40 @@
+{
+  "name": "koishi-plugin-mcmessager",
+  "description": "JE-qq简易互通",
+  "version": "1.0.1",
+  "author": "mckidsteve <734942701@qq.com>",
+  "main": "src/index.js",
+  "typings": "src/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "minecraft",
+    "messager"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.17.9"
+  },
+  "koishi": {
+    "description": {
+      "en": "A plugin of Koishi that do MC-QQ bot",
+      "zh": "一个TO mc - qq的机器人插件"
+    },
+    "service": {
+      "required": [
+        "database"
+      ]
+    }
+  },
+  "dependencies": {
+    "koishi": "^4.17.9"
+  },
+  "devDependencies": {
+    "koishi": "^4.17.9"
+  }
+}
